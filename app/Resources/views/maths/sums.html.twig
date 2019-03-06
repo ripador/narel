@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Sum numbers{% endtrans %}{% endblock %}
+
+{% block body %}
+  <div class="container">
+
+    {# Breadcrumb #}
+    {% include 'default/_breadcrumb.html.twig' with {
+      links: {
+        ('Home'|trans): path('homepage'),
+        ('Maths'|trans): '#',
+      },
+      active: 'Sum'|trans
+    } %}
+
+    <div class="row">
+      <div class="col">
+        {% form_theme form 'bootstrap_4_horizontal_layout.html.twig' %}
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+
+        <div class="actions">
+          <button type="submit" class="btn btn-secondary">{% trans %}Check{% endtrans %}</button>
+        </div>
+
+        {{ form_end(form) }}
+      </div>
+    </div>
+
+    {% if submited %}
+      {% if success %}
+        {% include 'default/_response.html.twig' with {
+          id: 'ok',
+          level: 'alert-success',
+          message: 'Well done'|trans
+        } %}
+      {% else %}
+        {% include 'default/_response.html.twig' with {
+          id: 'ok',
+          level: 'alert-danger',
+          message: 'Try again'|trans
+        } %}
+      {% endif %}
+    {% endif %}
+
+  </div>
+{% endblock %}
