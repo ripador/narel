@@ -1,4 +1,6 @@
 $(function() {
+  $('.response').hide();
+
   var sortable = $("#sortable");
   sortable.sortable();
   sortable.disableSelection();
