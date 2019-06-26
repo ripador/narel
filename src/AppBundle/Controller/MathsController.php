@@ -81,32 +81,17 @@ class MathsController extends Controller {
     $mathService = new MathService();
     $num_operands = 2;
 
-    if ($request->getMethod() == 'POST') {
-      //If post check the operation
-      $form = $this->createForm(SumType::class, null, ['operands' => $num_operands]);
+    $sum = $mathService->randomSum(10, 0, $num_operands);
+    $form_data = $this->getFormDataFromOperation($sum);
+
+    $form = $this->createForm(SumType::class, $form_data);
+
+    if ($request->getMethod() == 'POST') { //If post check the operation
       $form->handleRequest($request);
       if ($form->isValid()) {
         $form_data = $form->getData();
-
-        //Transform the form data to the structure needed for validation in MatchService->checkSum
-        $operation = ['operands' => [], 'result' => 0];
-        foreach ($form_data as $key => $elem) {
-          if ($key == 'result') {
-            $operation['result'] = $elem;
-          } else {
-            $operation['operands'][] = $elem;
-          }
-        }
-
-        $success = $mathService->checkSum($operation);
-        dump($success);
+        $success = $mathService->checkSum($form_data);
       }
-
-    } else {
-      //If get generate random operation
-      $sum = $mathService->randomSum(10, 0, $num_operands);
-      $form_data = $this->getFormDataFromOperation($sum);
-      $form = $this->createForm(SumType::class, $form_data, ['operands' => $num_operands]);
     }
 
     return $this->render('maths/sums.html.twig', [
@@ -131,14 +116,10 @@ class MathsController extends Controller {
     $ocult = rand(0, $num_operands); //the random element to hide
     $i = 0;
     foreach ($operation['operands'] as $op) {
-      if ($i != $ocult) {
-        $form_data['op' . $i] = $op;
-      }
+      $form_data['operands'][] = ($i != $ocult) ? $op : null;
       $i++;
     }
-    if ($ocult != $num_operands) {
-      $form_data['result'] = $operation['result'];
-    }
+    $form_data['result'] = ($ocult != $num_operands) ? $operation['result'] : null;
 
     return $form_data;
   }

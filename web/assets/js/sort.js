@@ -1,19 +1,19 @@
 $(function() {
   $('.response').hide();
 
-  var sortable = $("#sortable");
+  let sortable = $("#sortable");
   sortable.sortable();
   sortable.disableSelection();
 
   $('#check').on('click', function(e) {
     $('.response').hide();
-    var stop = false;
-    var pos = 1;
-    var ant = 0;
+    let stop = false;
+    let pos = 1;
+    let ant = 0;
 
     sortable.find('li').each(function (idx) {
-      var obj = $(this);
-      var val = parseInt(obj.attr('data-value'));
+      let obj = $(this);
+      let val = parseInt(obj.attr('data-value'));
 
       if (stop == false && val < ant) {
         //updateResponse("EL NÚMERO " + val + " ESTÀ A LA POSICIÓ " + pos, false);
