@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="030229e5-86a7-46ed-8a39-0888545bc39f" name="Default Changelist" comment="New action in the maths controller for the sums.&#10;New utils class MathService to contain the math functions.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="030229e5-86a7-46ed-8a39-0888545bc39f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/translations/messages.ca.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/translations/messages.ca.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/_menu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/_menu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/translations/messages.es.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/translations/messages.es.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/maths/sums.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/maths/sums.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MathsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MathsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Form/SumType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Form/SumType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/assets/js/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/assets/js/sort.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +22,13 @@
     <session id="527680317">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="7" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -37,20 +36,20 @@
           <entry key="css" value="61" />
           <entry key="gitignore" value="32" />
           <entry key="js" value="1136" />
-          <entry key="php" value="4326" />
-          <entry key="twig" value="2137" />
-          <entry key="txt" value="258" />
-          <entry key="yml" value="437" />
+          <entry key="php" value="4533" />
+          <entry key="twig" value="2196" />
+          <entry key="txt" value="353" />
+          <entry key="yml" value="485" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="61" />
           <entry key="JavaScript" value="1136" />
-          <entry key="PHP" value="4326" />
-          <entry key="PLAIN_TEXT" value="290" />
-          <entry key="Twig" value="2137" />
-          <entry key="YAML" value="437" />
+          <entry key="PHP" value="4533" />
+          <entry key="PLAIN_TEXT" value="385" />
+          <entry key="Twig" value="2196" />
+          <entry key="YAML" value="485" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,10 +60,10 @@
           <entry key="html" value="1" />
           <entry key="js" value="8" />
           <entry key="md" value="1" />
-          <entry key="php" value="12" />
-          <entry key="twig" value="35" />
+          <entry key="php" value="13" />
+          <entry key="twig" value="38" />
           <entry key="yaml" value="1" />
-          <entry key="yml" value="18" />
+          <entry key="yml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -73,10 +72,10 @@
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="8" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="12" />
+          <entry key="PHP" value="13" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Twig" value="35" />
-          <entry key="YAML" value="19" />
+          <entry key="Twig" value="38" />
+          <entry key="YAML" value="22" />
           <entry key="htaccess" value="1" />
         </counts>
       </usages-collector>
@@ -87,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MathsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+            <state relative-caret-position="162">
+              <caret line="82" column="37" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="37" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
               </folding>
@@ -96,11 +95,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.ca.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="17" column="16" selection-start-line="14" selection-end-line="17" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.es.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -108,8 +116,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/SumType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/maths/sums.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -145,20 +162,20 @@
         <option value="$PROJECT_DIR$/web/assets/js/general.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/_response.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/translations/messages.es.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/maths/sort.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/DifficultyType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Utils/MathService.php" />
         <option value="$PROJECT_DIR$/web/assets/css/general.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/maths/sums.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web/assets/js/sort.js" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/SumType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/_menu.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/SumType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MathsController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/maths/sums.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/translations/messages.ca.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/translations/messages.es.yml" />
       </list>
     </option>
   </component>
@@ -265,12 +282,6 @@
               <item name="narel" type="b2602c69:ProjectViewProjectNode" />
               <item name="narel" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="narel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="narel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,14 +297,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="narel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="narel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="narel" type="b2602c69:ProjectViewProjectNode" />
@@ -418,7 +421,8 @@
       <workItem from="1550916274213" duration="7653000" />
       <workItem from="1551854771442" duration="3085000" />
       <workItem from="1551891779751" duration="2459000" />
-      <workItem from="1561562407388" duration="769000" />
+      <workItem from="1561562407388" duration="925000" />
+      <workItem from="1561643778939" duration="917000" />
     </task>
     <task id="LOCAL-00001" summary="Change default visibility od the response partial. Make it visible in general, and hide by js in the sort page.">
       <created>1551892847631</created>
@@ -434,11 +438,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551892980949</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Correct the sum form by initializing always with random values (same operand number)">
+      <created>1561563297952</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561563297952</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23277000" />
+    <option name="totallyTimeSpent" value="24350000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -453,7 +464,7 @@
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21816881" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
@@ -505,7 +516,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change default visibility od the response partial. Make it visible in general, and hide by js in the sort page." />
     <MESSAGE value="New action in the maths controller for the sums.&#10;New utils class MathService to contain the math functions." />
-    <option name="LAST_COMMIT_MESSAGE" value="New action in the maths controller for the sums.&#10;New utils class MathService to contain the math functions." />
+    <MESSAGE value="Correct the sum form by initializing always with random values (same operand number)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct the sum form by initializing always with random values (same operand number)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../narel copia/ordenar.html" />
@@ -548,13 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.es.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -601,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/maths/sort.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/sort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -615,24 +613,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/maths/sums.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
           <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -657,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/SumType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/MathService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -671,20 +648,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/AppBundle.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/maths/sort.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="90" column="15" selection-start-line="90" selection-start-column="15" selection-end-line="90" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/SumType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MathsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
+        <state relative-caret-position="162">
+          <caret line="82" column="37" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="37" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/maths/sums.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.ca.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="17" column="16" selection-start-line="14" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.es.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -34,11 +34,9 @@ class MathsController extends Controller {
       ['max' => 30, 'rows' => 2, 'name' => 'Medium'],
       ['max' => 99, 'rows' => 3, 'name' => 'Hard'],
     ];
+    $choices = $this->getChoicesFromLevels($levels);
 
-    $choices = $number_array = [];
-    foreach ($levels as $k => $data) {
-      $choices[$data['name']] = $k;
-    }
+    $number_array = [];
 
     $form = $this->createFormBuilder()
       ->add('difficult', ChoiceType::class, [
@@ -68,6 +66,15 @@ class MathsController extends Controller {
       'numbers' => $number_array,
       'form'    => $form->createView()
     ]);
+  }
+
+  private function getChoicesFromLevels($levels) {
+    $choices = $number_array = [];
+    foreach ($levels as $k => $data) {
+      $choices[$data['name']] = $k;
+    }
+
+    return $choices;
   }
 
   /**
