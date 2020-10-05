@@ -1,5 +1,9 @@
-narel
-=====
+# narel
+
+### DISCONTINUED:
+This project was migrated to https://github.com/ripador/plademar
+
+---
 
 This is a primary school student training tool.
 With multiple excersises in different areas.
